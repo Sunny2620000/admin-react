@@ -7,6 +7,9 @@ import Dashboard from "./Components/Dashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ControlSidebar from "./Components/ControlSidebar";
 import Profile from "./Components/Users/Profile";
+import Register from "./Components/Register";
+// import Login from './Components/Login';
+// import NotFound from "./Components/NotFound";
 
 function App() {
   return (
@@ -17,7 +20,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/profile" element={<Profile/>} />
+        <Route path="/register" element={<Register/>} />
+        {/* <Route path="/login" element={<Login/>} /> */}
+        {/* <Route path="*" element={<NotFound/>} /> */}
       </Routes>
+      {/* <NotFound/> */}
+      {/* <Login/> */}
       <ControlSidebar/>
       <Footer />
     </Router>
