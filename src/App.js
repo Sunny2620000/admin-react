@@ -6,15 +6,17 @@ import Dashboard from "./Components/Dashboard";
 // Import BrowserRouter from react-router-dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ControlSidebar from "./Components/ControlSidebar";
+import Profile from "./Components/Users/Profile";
 
 function App() {
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       
     <Router>
       <Sidebar />
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile/>} />
       </Routes>
       <ControlSidebar/>
       <Footer />
